@@ -10,7 +10,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
+        <maven.jaxb2.plugin.version>2.4</maven.jaxb2.plugin.version>
     </properties>
 
     <dependencies>
@@ -30,6 +30,35 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jaxb2-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>generate-common-jaxb-classes</id>
+                        <phase>initialize</phase>
+                        <configuration>
+                            <arguments>
+<!--                                <argument>-Xnamespace-prefix</argument>-->
+<!--                                <argument>-XtoString</argument>-->
+<!--                                <argument>-Xequals</argument>-->
+<!--                                <argument>-XhashCode</argument>-->
+<!--                                <argument>-Xinheritance</argument>-->
+<!--                                <argument>-Xvalue-constructor</argument>-->
+                            </arguments>
+                            <sources>
+                                <source>${project.basedir}/src/main/resources/Dictionary.xsd</source>
+                            </sources>
+                            <outputDirectory>${project.basedir}/target/generated-sources/jaxb/common</outputDirectory>
+                        </configuration>
+                        <goals>
+                            <goal>xjc</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!--
             <plugin>
                 <groupId>org.jvnet.jaxb2.maven2</groupId>
                 <artifactId>maven-jaxb2-plugin</artifactId>
@@ -68,6 +97,17 @@
                     </execution>
                 </executions>
             </plugin>
+            -->
         </plugins>
+
+        <pluginManagement>
+        <plugins>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>jaxb2-maven-plugin</artifactId>
+            <version>${maven.jaxb2.plugin.version}</version>
+        </plugin>
+        </plugins>
+        </pluginManagement>
     </build>
 </project>
