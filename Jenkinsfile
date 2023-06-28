@@ -1,15 +1,14 @@
 pipeline {
     agent any
-    stages {
-        stage('Example') {
-            steps {
-                echo 'Hello World'
-            }
-        }
+    tools {
+        maven 'Maven 3.3.9'
+        jdk 'jdk8'
     }
-    post {
-        always {
-            echo 'I will always say Hello again!'
+    stages {
+        stage('Build') {
+            steps {
+                sh 'mvn install'
+            }
         }
     }
 }
