@@ -32,7 +32,7 @@
         <plugins>
 
             <!-- Generate source by xsd with bean validation use org.codehaus.mojo:jaxb2-maven-plugin plugin -->
-            <plugin>
+            <!--<plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>jaxb2-maven-plugin</artifactId>
                 <dependencies>
@@ -72,7 +72,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
 
             <!-- Generate source by xsd with bean validation use org.jvnet.jaxb2.maven2:maven-jaxb2-plugin plugin -->
             <!--
@@ -117,14 +117,14 @@
             -->
         </plugins>
 
-        <pluginManagement>
-        <plugins>
-        <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>jaxb2-maven-plugin</artifactId>
-            <version>${maven.jaxb2.plugin.version}</version>
-        </plugin>
-        </plugins>
-        </pluginManagement>
+<!--        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>jaxb2-maven-plugin</artifactId>
+                    <version>${maven.jaxb2.plugin.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>-->
     </build>
 </project>
