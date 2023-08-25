@@ -9,3 +9,10 @@
 #### TODO:
 
     1. Bean validation with org.codehaus.mojo:jaxb2-maven-plugin   
+
+#### How we can monitor the docker engine 
+
+    docker events
+
+https://docs.docker.com/engine/reference/commandline/events/
+
