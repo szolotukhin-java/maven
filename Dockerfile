@@ -1,6 +1,8 @@
 FROM maven:3.9.3-amazoncorretto-20 as build
+COPY pom.xml /usr/src/app/pom.xml
+RUN mvn -f /usr/src/app/pom.xml dependency:go-offline -B
+
 COPY src /usr/src/app/src
-COPY pom.xml /usr/src/app
 RUN mvn -f /usr/src/app/pom.xml clean install
 
 FROM alpine as build_2
