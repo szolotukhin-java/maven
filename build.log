@@ -10,3 +10,20 @@ Build single image
 
 Build multi stage image
 
+2023-08-25T15:43:01.705796227Z container    create      a3ed2da310cc4d74525c172e12f528bcbfd76530d6ca9d2c662b8134d394e892 (image=sha256:42945d799284a879541936e443786cff6a8b6b94b11a6cf8e501c093cfd1d19b, name=great_wiles)
+2023-08-25T15:43:01.706169086Z container    attach      a3ed2da310cc4d74525c172e12f528bcbfd76530d6ca9d2c662b8134d394e892 (image=sha256:42945d799284a879541936e443786cff6a8b6b94b11a6cf8e501c093cfd1d19b, name=great_wiles)
+2023-08-25T15:43:01.718684011Z network      connect     a11df9aba7f715ca5c870a9ebc34f86a46dfa73b3206e21f8ad82301b2affff4 (container=a3ed2da310cc4d74525c172e12f528bcbfd76530d6ca9d2c662b8134d394e892, name=bridge, type=bridge)
+2023-08-25T15:43:01.832450830Z container    start       a3ed2da310cc4d74525c172e12f528bcbfd76530d6ca9d2c662b8134d394e892 (image=sha256:42945d799284a879541936e443786cff6a8b6b94b11a6cf8e501c093cfd1d19b, name=great_wiles)
+2023-08-25T15:43:20.730747621Z network      disconnect  a11df9aba7f715ca5c870a9ebc34f86a46dfa73b3206e21f8ad82301b2affff4 (container=a3ed2da310cc4d74525c172e12f528bcbfd76530d6ca9d2c662b8134d394e892, name=bridge, type=bridge)
+2023-08-25T15:43:21.570153477Z container    die         a3ed2da310cc4d74525c172e12f528bcbfd76530d6ca9d2c662b8134d394e892 (execDuration=18, exitCode=0, image=sha256:42945d799284a879541936e443786cff6a8b6b94b11a6cf8e501c093cfd1d19b, name=great_wiles)
+2023-08-25T15:43:22.527216440Z container    destroy     a3ed2da310cc4d74525c172e12f528bcbfd76530d6ca9d2c662b8134d394e892 (image=sha256:42945d799284a879541936e443786cff6a8b6b94b11a6cf8e501c093cfd1d19b, name=great_wiles)
+
+2023-08-25T15:43:22.693057249Z container    create      f7ea7eca8052a0bdd12797137902d7bafd79b79d7cfb845f940bf9f95f0d1476 (image=sha256:f7a38d4ae68df5ea0894acc6a81d6334d7203cdb4302d46bd0e7b8d918276f6b, name=charming_lederberg)
+2023-08-25T15:43:22.693209014Z container    attach      f7ea7eca8052a0bdd12797137902d7bafd79b79d7cfb845f940bf9f95f0d1476 (image=sha256:f7a38d4ae68df5ea0894acc6a81d6334d7203cdb4302d46bd0e7b8d918276f6b, name=charming_lederberg)
+2023-08-25T15:43:22.707038672Z network      connect     a11df9aba7f715ca5c870a9ebc34f86a46dfa73b3206e21f8ad82301b2affff4 (container=f7ea7eca8052a0bdd12797137902d7bafd79b79d7cfb845f940bf9f95f0d1476, name=bridge, type=bridge)
+2023-08-25T15:43:22.834331383Z container    start       f7ea7eca8052a0bdd12797137902d7bafd79b79d7cfb845f940bf9f95f0d1476 (image=sha256:f7a38d4ae68df5ea0894acc6a81d6334d7203cdb4302d46bd0e7b8d918276f6b, name=charming_lederberg)
+2023-08-25T15:43:22.931454012Z network      disconnect  a11df9aba7f715ca5c870a9ebc34f86a46dfa73b3206e21f8ad82301b2affff4 (container=f7ea7eca8052a0bdd12797137902d7bafd79b79d7cfb845f940bf9f95f0d1476, name=bridge, type=bridge)
+2023-08-25T15:43:23.094987584Z container    die         f7ea7eca8052a0bdd12797137902d7bafd79b79d7cfb845f940bf9f95f0d1476 (execDuration=0, exitCode=0, image=sha256:f7a38d4ae68df5ea0894acc6a81d6334d7203cdb4302d46bd0e7b8d918276f6b, name=charming_lederberg)
+2023-08-25T15:43:23.348637861Z container    destroy     f7ea7eca8052a0bdd12797137902d7bafd79b79d7cfb845f940bf9f95f0d1476 (image=sha256:f7a38d4ae68df5ea0894acc6a81d6334d7203cdb4302d46bd0e7b8d918276f6b, name=charming_lederberg)
+
+
