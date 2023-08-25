@@ -1,0 +1,12 @@
+Build single image
+
+2023-08-25T15:26:48.275850266Z container    create      5ff06f269710413f014cf18ab0c4ae16d857928de8edd518cd6616e92126de0d (image=sha256:3ce8775e21ccfc2ac0606502be4115cc844ee94b2f6e12ca39ebbb39a7cafa95, name=adoring_snyder)
+2023-08-25T15:26:48.276280156Z container    attach      5ff06f269710413f014cf18ab0c4ae16d857928de8edd518cd6616e92126de0d (image=sha256:3ce8775e21ccfc2ac0606502be4115cc844ee94b2f6e12ca39ebbb39a7cafa95, name=adoring_snyder)
+2023-08-25T15:26:48.297025906Z network      connect     a11df9aba7f715ca5c870a9ebc34f86a46dfa73b3206e21f8ad82301b2affff4 (container=5ff06f269710413f014cf18ab0c4ae16d857928de8edd518cd6616e92126de0d, name=bridge, type=bridge)
+2023-08-25T15:26:48.491476926Z container    start       5ff06f269710413f014cf18ab0c4ae16d857928de8edd518cd6616e92126de0d (image=sha256:3ce8775e21ccfc2ac0606502be4115cc844ee94b2f6e12ca39ebbb39a7cafa95, name=adoring_snyder)
+2023-08-25T15:27:05.412494286Z network      disconnect  a11df9aba7f715ca5c870a9ebc34f86a46dfa73b3206e21f8ad82301b2affff4 (container=5ff06f269710413f014cf18ab0c4ae16d857928de8edd518cd6616e92126de0d, name=bridge, type=bridge)
+2023-08-25T15:27:05.919562294Z container    die         5ff06f269710413f014cf18ab0c4ae16d857928de8edd518cd6616e92126de0d (execDuration=16, exitCode=0, image=sha256:3ce8775e21ccfc2ac0606502be4115cc844ee94b2f6e12ca39ebbb39a7cafa95, name=adoring_snyder)
+2023-08-25T15:27:06.863908148Z container    destroy     5ff06f269710413f014cf18ab0c4ae16d857928de8edd518cd6616e92126de0d (image=sha256:3ce8775e21ccfc2ac0606502be4115cc844ee94b2f6e12ca39ebbb39a7cafa95, name=adoring_snyder)
+
+Build multi stage image
+
