@@ -60,6 +60,39 @@
             </plugin>
 
             <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>buildplan-maven-plugin</artifactId>
+                <version>2.2.3-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <id>list-phase-on-validate</id>
+                        <phase>validate</phase>
+                        <configuration>
+                            <showAllPhases>true</showAllPhases>
+                            <showLifecycles>true</showLifecycles>
+                        </configuration>
+                        <goals>
+                            <goal>list-phase</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>list-phase-on-validate-2</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>list-phase</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>list-phase-on-verify</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>list-phase</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-install-plugin</artifactId>
                 <version>2.5.1</version>

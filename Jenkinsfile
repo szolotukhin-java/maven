@@ -7,8 +7,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn install'
+                sh 'mvn install > log.txt'
             }
+        }
+    }
+
+    post {
+        always {
+            archiveArtifacts artifacts: 'log.txt', onlyIfSuccessful: true
         }
     }
 }
