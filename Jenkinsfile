@@ -7,12 +7,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn install | tee first-loge.txt'
+                sh 'mvn install --log-file first-loge-2.txt'
             }
         }
         stage('second Build') {
             steps {
-                sh 'mvn install | tee second-loge.txt'
+                sh 'mvn install -log-file second-loge-2.txt'
             }
         }
     }
