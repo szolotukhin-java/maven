@@ -16,9 +16,6 @@ pipeline {
                     steps {
                         sh 'echo "Running unit tests"'
                     }
-                    steps {
-                        sh 'echo "Running unit tests"'
-                    }
                 }
                 stage('Integration Tests') {
                     steps {
