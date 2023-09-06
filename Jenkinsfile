@@ -14,15 +14,20 @@ pipeline {
             parallel {
                 stage('Unit Tests') {
                     steps {
-//                         sh 'sleep 5s'
                         sh 'echo "Running unit tests"'
-                        // Add commands to run unit tests
+                    }
+                    steps {
+                        sh 'echo "Running unit tests"'
                     }
                 }
                 stage('Integration Tests') {
                     steps {
                         sh 'echo "Running integration tests"'
-                        // Add commands to run integration tests
+                    }
+                }
+                stage('Integration Tests') {
+                    steps {
+                        sh 'echo "Running integration tests"'
                     }
                 }
             }
