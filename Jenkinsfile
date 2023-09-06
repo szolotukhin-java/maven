@@ -30,7 +30,7 @@ pipeline {
             }
         }
         stage('third Build') {
-             parallel {
+             parallel("P2") {
                 stage('Build 1') {
                     steps {
                         sh 'mvn clean install'
