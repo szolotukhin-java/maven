@@ -22,7 +22,7 @@ pipeline {
                         sh 'echo "Running integration tests"'
                     }
                 }
-                stage('Integration Tests') {
+                stage('Integration Tests 2') {
                     steps {
                         sh 'echo "Running integration tests"'
                     }
