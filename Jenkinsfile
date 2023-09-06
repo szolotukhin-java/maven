@@ -10,21 +10,21 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
-        stage('second Build') {
-            parallel(
-                stage('third Build 1') {
+        stage('Test') {
+            parallel {
+                stage('Unit Tests') {
                     steps {
-                        sh 'mvn clean install'
+//                         sh 'sleep 5s'
+                        sh 'echo "Running unit tests"'
+                        // Add commands to run unit tests
                     }
                 }
-                stage('third Build 2') {
+                stage('Integration Tests') {
                     steps {
-                        sh 'mvn clean install'
+                        sh 'echo "Running integration tests"'
+                        // Add commands to run integration tests
                     }
                 }
-            )
-            steps {
-                sh 'mvn clean install'
             }
         }
         stage('third Build') {
