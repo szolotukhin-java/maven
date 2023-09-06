@@ -7,14 +7,19 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn install | tee loge.txt'
+                sh 'mvn install | tee first-loge.txt'
+            }
+        }
+        stage('second Build') {
+            steps {
+                sh 'mvn install | tee second-loge.txt'
             }
         }
     }
 
     post {
         always {
-            archiveArtifacts artifacts: 'log.txt', onlyIfSuccessful: true
+            archiveArtifacts artifacts: '8.txt', onlyIfSuccessful: true
         }
     }
 }
