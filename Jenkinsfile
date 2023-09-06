@@ -15,6 +15,11 @@ pipeline {
                 sh 'mvn install -log-file second-loge-2.txt'
             }
         }
+        stage('third Build') {
+            steps {
+                sh 'mvn install'
+            }
+        }
     }
 
     post {
