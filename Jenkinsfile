@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn install > log.txt'
+                sh 'mvn install | tee loge.txt'
             }
         }
     }
