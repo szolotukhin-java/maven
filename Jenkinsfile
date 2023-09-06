@@ -19,7 +19,7 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: '*.txt', onlyIfSuccessful: true
+            archiveArtifacts artifacts: '*.txt'
         }
     }
 }
