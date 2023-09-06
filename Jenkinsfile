@@ -10,6 +10,14 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
+        parallel(
+            a: {
+                echo "This is branch a"
+            },
+            b: {
+                echo "This is branch b"
+            }
+        )
         stage('second Build') {
             steps {
                 sh 'mvn clean install'
