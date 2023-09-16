@@ -16,3 +16,9 @@
 
 https://docs.docker.com/engine/reference/commandline/events/
 
+#### Git plugins
+https://github.com/git-commit-id/git-commit-id-maven-plugin
+https://www.baeldung.com/spring-git-information
+
+#### Jenkins Git environment variables list
+https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Complete-Jenkins-Git-environment-variables-list-for-batch-jobs-and-shell-script-builds
