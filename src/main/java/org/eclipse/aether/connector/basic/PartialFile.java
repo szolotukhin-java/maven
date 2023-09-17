@@ -44,18 +44,12 @@ public final class PartialFile implements Closeable {
     static final String EXT_LOCK = ".lock";
 
     public interface RemoteAccessChecker {
-
-        void checkRemoteAccess()
-                throws Exception;
-
+        void checkRemoteAccess() throws Exception;
     }
 
     static class LockFile {
-
         private final File lockFile;
-
         private final FileLock lock;
-
         private final AtomicBoolean concurrent;
 
         LockFile(File partFile, int requestTimeout, RemoteAccessChecker checker)
@@ -189,11 +183,8 @@ public final class PartialFile implements Closeable {
     }
 
     public static class Factory {
-
         private final boolean resume;
-
         private final long resumeThreshold;
-
         private final int requestTimeout;
 
         private static final Logger LOGGER = LoggerFactory.getLogger(Factory.class);
@@ -204,8 +195,7 @@ public final class PartialFile implements Closeable {
             this.requestTimeout = requestTimeout;
         }
 
-        public PartialFile newInstance(File dstFile, RemoteAccessChecker checker)
-                throws Exception {
+        public PartialFile newInstance(File dstFile, RemoteAccessChecker checker) throws Exception {
             if (resume) {
                 File partFile = new File(dstFile.getPath() + EXT_PART);
 
@@ -227,20 +217,15 @@ public final class PartialFile implements Closeable {
                 }
             }
 
-            File tempFile =
-                    File.createTempFile(dstFile.getName() + '-' + UUID.randomUUID().toString().replace("-", ""), ".tmp",
-                            dstFile.getParentFile());
+            File tempFile = File.createTempFile(dstFile.getName() + '-' + UUID.randomUUID().toString().replace("-", ""), ".tmp", dstFile.getParentFile());
             return new PartialFile(tempFile);
         }
 
     }
 
     private final File partFile;
-
     private final LockFile lockFile;
-
     private final long threshold;
-
     private static final Logger LOGGER = LoggerFactory.getLogger(PartialFile.class);
 
     private PartialFile(File partFile) {
