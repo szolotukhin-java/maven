@@ -10,6 +10,16 @@ running_set = [
         sh 'echo "Running integration tests 2 end"'
         sh 'exit 1'
     }
+    "task3": {
+        sh 'echo "Running integration tests 3"'
+        sh 'sleep 15'
+        sh 'echo "Running integration tests 3 end"'
+    }
+    "task4": {
+        sh 'echo "Running integration tests 4"'
+        sh 'sleep 5'
+        sh 'echo "Running integration tests 4 end"'
+    }
 ]
 
 pipeline {
@@ -19,10 +29,17 @@ pipeline {
         jdk 'jdk8'
     }
     stages {
-        stage('Run-2') {
+        stage('Run') {
             steps {
                 script {
                     parallel(running_set)
+                }
+            }
+        }
+        stage('End') {
+            steps {
+                script {
+                    echo "End"
                 }
             }
         }
