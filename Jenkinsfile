@@ -43,17 +43,19 @@ pipeline {
                 }
             }
         }
-        stage("second-2") {
-            steps {
-                parallel (
-                    "two": {
-                        echo "aaa1"
-                    },
-                    "three": {
-                        echo "bbb"
+        stage('Tests-3') {
+            parallel(
+                'Unit Tests': {
+                    container('node') {
+                        sh("npm test --cat=unit")
                     }
-                )
-            }
+                },
+                'API Tests': {
+                    container('node') {
+                        sh("npm test --cat=acceptance")
+                    }
+                }
+            )
         }
     }
 }
