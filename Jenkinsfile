@@ -43,18 +43,17 @@ pipeline {
                 }
             }
         }
-
-        stage('build-2') {
-            def stages = [:]
-
-            stages["mac"] = {
-                echo "build for mac"
+        stage("second-2") {
+            steps {
+                parallel (
+                    "two": {
+                        echo "aaa1"
+                    },
+                    "three": {
+                        echo "bbb"
+                    }
+                )
             }
-            stages["linux"] = {
-                echo "build for linux"
-            }
-
-            parallel(stages)
         }
     }
 
