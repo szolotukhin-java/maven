@@ -7,37 +7,31 @@ pipeline {
     stages {
        stage('before') {
            steps {
-               println("before")
+               sh 'sleep 5'
            }
        }
        stage('para') {
            parallel {
-               stage('apple') {
+               stage('Unit Tests') {
                    steps {
-                       println("apple 1")
-                       sleep(20 * Math.random())
-                       println("apple 2")
+                       sh 'sleep 10'
                    }
                }
-               stage('banana') {
+               stage('Functional Tests') {
                    steps {
-                       println("banana 1")
-                       sleep(20 * Math.random())
-                       println("banana 2")
+                       sh 'sleep 20'
                    }
                }
-               stage('peach') {
+               stage('Integration Tests') {
                    steps {
-                       println("peach 1")
-                       sleep(20 * Math.random())
-                       println("peach 2")
+                       sh 'sleep 15'
                    }
                }
            }
        }
        stage('after') {
            steps {
-               println("after")
+               sh 'sleep 5'
            }
        }
     }
