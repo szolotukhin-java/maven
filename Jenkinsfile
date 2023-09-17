@@ -56,10 +56,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            archiveArtifacts artifacts: '*.txt'
-        }
-    }
 }
