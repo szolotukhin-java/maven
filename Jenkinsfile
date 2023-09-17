@@ -43,17 +43,6 @@ pipeline {
                 }
             }
         }
-
-        stage('parallel task') {
-            parallel([
-                hello: {
-                    echo "hello"
-                },
-                world: {
-                    echo "world"
-                }
-            ])
-        }
     }
 
     post {
