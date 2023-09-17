@@ -9,12 +9,12 @@ running_set = [
         sh 'sleep 20'
         sh 'echo "Running integration tests 2 end"'
         sh 'exit 1'
-    }
+    },
     "task3": {
         sh 'echo "Running integration tests 3"'
         sh 'sleep 15'
         sh 'echo "Running integration tests 3 end"'
-    }
+    },
     "task4": {
         sh 'echo "Running integration tests 4"'
         sh 'sleep 5'
