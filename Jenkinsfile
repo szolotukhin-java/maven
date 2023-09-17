@@ -8,7 +8,6 @@ running_set = [
         sh 'echo "Running integration tests 2"'
         sh 'sleep 20'
         sh 'echo "Running integration tests 2 end"'
-        sh 'exit 1'
     },
     "task3": {
         sh 'echo "Running integration tests 3"'
