@@ -1,24 +1,3 @@
-running_set = [
-    "task1": {
-        stage ("task_2"){
-            node('label_example1') {
-                sh 'echo "Running integration tests 1"'
-                sh 'sleep 10'
-                sh 'echo "Running integration tests 1 end"'
-            }
-        }
-    },
-    "task2": {
-        stage ("task_2"){
-            node('label_example_2') {
-                sh 'echo "Running integration tests 1"'
-                sh 'sleep 20'
-                sh 'echo "Running integration tests 1 end"'
-            }
-        }
-    }
-]
-
 pipeline {
     agent any
     tools {
@@ -26,19 +5,40 @@ pipeline {
         jdk 'jdk8'
     }
     stages {
-        stage('Run') {
-            steps {
-                script {
-                    parallel(running_set)
-                }
-            }
-        }
-        stage('End') {
-            steps {
-                script {
-                    echo "End"
-                }
-            }
-        }
+       stage('before') {
+           steps {
+               println("before")
+           }
+       }
+       stage('para') {
+           parallel {
+               stage('apple') {
+                   steps {
+                       println("apple 1")
+                       sleep(20 * Math.random())
+                       println("apple 2")
+                   }
+               }
+               stage('banana') {
+                   steps {
+                       println("banana 1")
+                       sleep(20 * Math.random())
+                       println("banana 2")
+                   }
+               }
+               stage('peach') {
+                   steps {
+                       println("peach 1")
+                       sleep(20 * Math.random())
+                       println("peach 2")
+                   }
+               }
+           }
+       }
+       stage('after') {
+           steps {
+               println("after")
+           }
+       }
     }
 }
