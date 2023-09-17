@@ -1,3 +1,12 @@
+running_set = [
+    "task1": {
+        sh 'echo "Running integration tests 1"'
+    },
+    "task2": {
+        sh 'echo "Running integration tests 2"'
+    }
+]
+
 pipeline {
     agent any
     tools {
@@ -43,19 +52,12 @@ pipeline {
                 }
             }
         }
-        stage('Tests-3') {
-            parallel(
-                'Unit Tests': {
-                    container('node') {
-                        sh("npm test --cat=unit")
-                    }
-                },
-                'API Tests': {
-                    container('node') {
-                        sh("npm test --cat=acceptance")
-                    }
+        stage('Run-2') {
+            steps {
+                script {
+                    parallel(running_set)
                 }
-            )
+            }
         }
     }
 }
