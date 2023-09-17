@@ -43,6 +43,19 @@ pipeline {
                 }
             }
         }
+
+        stage('build-2') {
+            def stages = [:]
+
+            stages["mac"] = {
+                echo "build for mac"
+            }
+            stages["linux"] = {
+                echo "build for linux"
+            }
+
+            parallel(stages)
+        }
     }
 
     post {
