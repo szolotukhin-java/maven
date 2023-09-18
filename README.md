@@ -16,4 +16,6 @@
 
 https://docs.docker.com/engine/reference/commandline/events/
 
-#### How to create Jenkins pipeline
+#### Don’t Let the Maven Deploy Plugin Trip You Up
+
+https://jfrog.com/blog/dont-let-maven-deploy-plugin-trip-you/
