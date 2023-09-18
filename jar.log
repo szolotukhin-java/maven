@@ -1,0 +1,283 @@
+D:\projects-java\_maven\maven>deply.bat
+
+D:\projects-java\_maven\maven>call mvn jar:jar org.apache.maven.plugins:maven-deploy-plugin:2.7:deploy@default-deploy -X
+Apache Maven 3.8.6 (84538c9988a25aec085021c365c560670ad80f63)
+Maven home: C:\soft\apache-maven-3.8.6
+Java version: 20, vendor: Oracle Corporation, runtime: C:\soft\java-20
+Default locale: en_US, platform encoding: UTF-8
+OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
+DEBUG Created new class realm maven.api
+DEBUG Importing foreign packages into class realm maven.api
+DEBUG   Imported: javax.annotation.* < plexus.core
+DEBUG   Imported: javax.annotation.security.* < plexus.core
+DEBUG   Imported: javax.inject.* < plexus.core
+DEBUG   Imported: org.apache.maven.* < plexus.core
+DEBUG   Imported: org.apache.maven.artifact < plexus.core
+DEBUG   Imported: org.apache.maven.classrealm < plexus.core
+DEBUG   Imported: org.apache.maven.cli < plexus.core
+DEBUG   Imported: org.apache.maven.configuration < plexus.core
+DEBUG   Imported: org.apache.maven.exception < plexus.core
+DEBUG   Imported: org.apache.maven.execution < plexus.core
+DEBUG   Imported: org.apache.maven.execution.scope < plexus.core
+DEBUG   Imported: org.apache.maven.lifecycle < plexus.core
+DEBUG   Imported: org.apache.maven.model < plexus.core
+DEBUG   Imported: org.apache.maven.monitor < plexus.core
+DEBUG   Imported: org.apache.maven.plugin < plexus.core
+DEBUG   Imported: org.apache.maven.profiles < plexus.core
+DEBUG   Imported: org.apache.maven.project < plexus.core
+DEBUG   Imported: org.apache.maven.reporting < plexus.core
+DEBUG   Imported: org.apache.maven.repository < plexus.core
+DEBUG   Imported: org.apache.maven.rtinfo < plexus.core
+DEBUG   Imported: org.apache.maven.settings < plexus.core
+DEBUG   Imported: org.apache.maven.toolchain < plexus.core
+DEBUG   Imported: org.apache.maven.usability < plexus.core
+DEBUG   Imported: org.apache.maven.wagon.* < plexus.core
+DEBUG   Imported: org.apache.maven.wagon.authentication < plexus.core
+DEBUG   Imported: org.apache.maven.wagon.authorization < plexus.core
+DEBUG   Imported: org.apache.maven.wagon.events < plexus.core
+DEBUG   Imported: org.apache.maven.wagon.observers < plexus.core
+DEBUG   Imported: org.apache.maven.wagon.proxy < plexus.core
+DEBUG   Imported: org.apache.maven.wagon.repository < plexus.core
+DEBUG   Imported: org.apache.maven.wagon.resource < plexus.core
+DEBUG   Imported: org.codehaus.classworlds < plexus.core
+DEBUG   Imported: org.codehaus.plexus.* < plexus.core
+DEBUG   Imported: org.codehaus.plexus.classworlds < plexus.core
+DEBUG   Imported: org.codehaus.plexus.component < plexus.core
+DEBUG   Imported: org.codehaus.plexus.configuration < plexus.core
+DEBUG   Imported: org.codehaus.plexus.container < plexus.core
+DEBUG   Imported: org.codehaus.plexus.context < plexus.core
+DEBUG   Imported: org.codehaus.plexus.lifecycle < plexus.core
+DEBUG   Imported: org.codehaus.plexus.logging < plexus.core
+DEBUG   Imported: org.codehaus.plexus.personality < plexus.core
+DEBUG   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+DEBUG   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+DEBUG   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+DEBUG   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+DEBUG   Imported: org.eclipse.aether.* < plexus.core
+DEBUG   Imported: org.eclipse.aether.artifact < plexus.core
+DEBUG   Imported: org.eclipse.aether.collection < plexus.core
+DEBUG   Imported: org.eclipse.aether.deployment < plexus.core
+DEBUG   Imported: org.eclipse.aether.graph < plexus.core
+DEBUG   Imported: org.eclipse.aether.impl < plexus.core
+DEBUG   Imported: org.eclipse.aether.installation < plexus.core
+DEBUG   Imported: org.eclipse.aether.internal.impl < plexus.core
+DEBUG   Imported: org.eclipse.aether.metadata < plexus.core
+DEBUG   Imported: org.eclipse.aether.repository < plexus.core
+DEBUG   Imported: org.eclipse.aether.resolution < plexus.core
+DEBUG   Imported: org.eclipse.aether.spi < plexus.core
+DEBUG   Imported: org.eclipse.aether.transfer < plexus.core
+DEBUG   Imported: org.eclipse.aether.version < plexus.core
+DEBUG   Imported: org.fusesource.jansi.* < plexus.core
+DEBUG   Imported: org.slf4j.* < plexus.core
+DEBUG   Imported: org.slf4j.event.* < plexus.core
+DEBUG   Imported: org.slf4j.helpers.* < plexus.core
+DEBUG   Imported: org.slf4j.spi.* < plexus.core
+DEBUG Populating class realm maven.api
+INFO Error stacktraces are turned on.
+DEBUG Message scheme: color
+DEBUG Message styles: debug info warning error success failure strong mojo project
+DEBUG Reading global settings from C:\soft\apache-maven-3.8.6\conf\settings.xml
+DEBUG Reading user settings from C:\Users\szolotukhin\.m2\settings.xml
+DEBUG Reading global toolchains from C:\soft\apache-maven-3.8.6\conf\toolchains.xml
+DEBUG Reading user toolchains from C:\Users\szolotukhin\.m2\toolchains.xml
+DEBUG Using local repository at C:\Users\szolotukhin\.m2\repository
+DEBUG Using manager EnhancedLocalRepositoryManager with priority 10.0 for C:\Users\szolotukhin\.m2\repository
+INFO Scanning for projects...
+DEBUG Extension realms for project ua.in.sz.mvn:jaxb-bean-validation:jar:0.0.1-SNAPSHOT: (none)
+DEBUG Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+DEBUG Resolving plugin prefix jar from [ua.in.sz.maven.plugin, org.apache.maven.plugins, org.codehaus.mojo]
+DEBUG Using mirror maven-default-http-blocker (http://0.0.0.0/) for apache.snapshots (http://repository.apache.org/snapshots).
+DEBUG Resolved plugin prefix jar to org.apache.maven.plugins:maven-jar-plugin from POM ua.in.sz.mvn:jaxb-bean-validation:jar:0.0.1-SNAPSHOT
+DEBUG === REACTOR BUILD PLAN ================================================
+DEBUG Project: ua.in.sz.mvn:jaxb-bean-validation:jar:0.0.1-SNAPSHOT
+DEBUG Tasks:   [jar:jar, org.apache.maven.plugins:maven-deploy-plugin:2.7:deploy@default-deploy]
+DEBUG Style:   Regular
+DEBUG =======================================================================
+INFO
+INFO -----------------< ua.in.sz.mvn:jaxb-bean-validation >------------------
+INFO Building jaxb-bean-validation 0.0.1-SNAPSHOT
+INFO --------------------------------[ jar ]---------------------------------
+DEBUG Resolving plugin prefix jar from [ua.in.sz.maven.plugin, org.apache.maven.plugins, org.codehaus.mojo]
+DEBUG Resolved plugin prefix jar to org.apache.maven.plugins:maven-jar-plugin from POM ua.in.sz.mvn:jaxb-bean-validation:jar:0.0.1-SNAPSHOT
+DEBUG Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-
+classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+DEBUG Lifecycle clean -> [pre-clean, clean, post-clean]
+DEBUG Lifecycle site -> [pre-site, site, post-site, site-deploy]
+DEBUG === PROJECT BUILD PLAN ================================================
+DEBUG Project:       ua.in.sz.mvn:jaxb-bean-validation:0.0.1-SNAPSHOT
+DEBUG Dependencies (collect): []
+DEBUG Dependencies (resolve): [runtime]
+DEBUG Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
+DEBUG Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+DEBUG -----------------------------------------------------------------------
+DEBUG Goal:          org.apache.maven.plugins:maven-jar-plugin:2.4:jar (default-cli)
+DEBUG Style:         Regular
+DEBUG Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <defaultManifestFile default-value="${project.build.outputDirectory}/META-INF/MANIFEST.MF"/>
+  <finalName default-value="${project.build.finalName}">${jar.finalName}</finalName>
+  <forceCreation default-value="false">${jar.forceCreation}</forceCreation>
+  <outputDirectory default-value="${project.build.directory}"/>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <skipIfEmpty default-value="false">${jar.skipIfEmpty}</skipIfEmpty>
+  <useDefaultManifestFile default-value="false">${jar.useDefaultManifestFile}</useDefaultManifestFile>
+</configuration>
+DEBUG -----------------------------------------------------------------------
+DEBUG Goal:          org.apache.maven.plugins:maven-deploy-plugin:2.7:deploy (default-deploy)
+DEBUG Style:         Regular
+DEBUG Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <altDeploymentRepository>${altDeploymentRepository}</altDeploymentRepository>
+  <artifact default-value="${project.artifact}"/>
+  <attachedArtifacts default-value="${project.attachedArtifacts}"/>
+  <localRepository default-value="${localRepository}"/>
+  <offline default-value="${settings.offline}"/>
+  <packaging default-value="${project.packaging}"/>
+  <pomFile default-value="${project.file}"/>
+  <project default-value="${project}"/>
+  <retryFailedDeploymentCount default-value="1">${retryFailedDeploymentCount}</retryFailedDeploymentCount>
+  <skip default-value="false">${maven.deploy.skip}</skip>
+  <updateReleaseInfo default-value="false">${updateReleaseInfo}</updateReleaseInfo>
+</configuration>
+DEBUG =======================================================================
+DEBUG Dependency collection stats {ConflictMarker.analyzeTime=17900, ConflictMarker.markTime=34600, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=7000, ConflictIdSorter.topsortTime=224900, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount
+=0, ConflictResolver.totalTime=783100, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=57200, DefaultDependencyCollector.transformTime=1751400}
+DEBUG ua.in.sz.mvn:jaxb-bean-validation:jar:0.0.1-SNAPSHOT
+INFO
+INFO --- maven-jar-plugin:2.4:jar (default-cli) @ jaxb-bean-validation ---
+DEBUG Using mirror maven-default-http-blocker (http://0.0.0.0/) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+DEBUG Using mirror maven-default-http-blocker (http://0.0.0.0/) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+DEBUG Using mirror maven-default-http-blocker (http://0.0.0.0/) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+DEBUG Using mirror maven-default-http-blocker (http://0.0.0.0/) for central (http://repo1.maven.org/maven2).
+DEBUG Dependency collection stats {ConflictMarker.analyzeTime=532200, ConflictMarker.markTime=61300, ConflictMarker.nodeCount=74, ConflictIdSorter.graphTime=99900, ConflictIdSorter.topsortTime=17900, ConflictIdSorter.conflictIdCount=28, ConflictIdSorter.conflictIdCycleCo
+unt=0, ConflictResolver.totalTime=1401200, ConflictResolver.conflictItemCount=70, DefaultDependencyCollector.collectTime=55370400, DefaultDependencyCollector.transformTime=2144400}
+DEBUG org.apache.maven.plugins:maven-jar-plugin:jar:2.4
+DEBUG    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+DEBUG    org.apache.maven:maven-project:jar:2.0.6:compile
+DEBUG       org.apache.maven:maven-settings:jar:2.0.6:compile
+DEBUG       org.apache.maven:maven-profile:jar:2.0.6:compile
+DEBUG       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+DEBUG          org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+DEBUG       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+DEBUG       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+DEBUG          junit:junit:jar:3.8.1:compile
+DEBUG          classworlds:classworlds:jar:1.1-alpha-2:compile
+DEBUG    org.apache.maven:maven-model:jar:2.0.6:runtime
+DEBUG    org.apache.maven:maven-artifact:jar:2.0.6:compile
+DEBUG    org.apache.maven:maven-archiver:jar:2.5:compile
+DEBUG       org.apache.maven:maven-core:jar:2.0.6:compile
+DEBUG          org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+DEBUG          org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+DEBUG             org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+DEBUG          org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+DEBUG          commons-cli:commons-cli:jar:1.0:compile
+DEBUG          org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+DEBUG          org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+DEBUG          org.apache.maven:maven-monitor:jar:2.0.6:compile
+DEBUG       org.codehaus.plexus:plexus-interpolation:jar:1.15:compile
+DEBUG    org.codehaus.plexus:plexus-archiver:jar:2.1:compile
+DEBUG       org.codehaus.plexus:plexus-io:jar:2.0.2:compile
+DEBUG    commons-lang:commons-lang:jar:2.1:compile
+DEBUG    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+DEBUG Created new class realm plugin>org.apache.maven.plugins:maven-jar-plugin:2.4
+DEBUG Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-jar-plugin:2.4
+DEBUG   Imported:  < maven.api
+DEBUG Populating class realm plugin>org.apache.maven.plugins:maven-jar-plugin:2.4
+DEBUG   Included: org.apache.maven.plugins:maven-jar-plugin:jar:2.4
+DEBUG   Included: junit:junit:jar:3.8.1
+DEBUG   Included: org.apache.maven:maven-archiver:jar:2.5
+DEBUG   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+DEBUG   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+DEBUG   Included: commons-cli:commons-cli:jar:1.0
+DEBUG   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+DEBUG   Included: org.codehaus.plexus:plexus-interpolation:jar:1.15
+DEBUG   Included: org.codehaus.plexus:plexus-archiver:jar:2.1
+DEBUG   Included: org.codehaus.plexus:plexus-io:jar:2.0.2
+DEBUG   Included: commons-lang:commons-lang:jar:2.1
+DEBUG   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+DEBUG Configuring mojo org.apache.maven.plugins:maven-jar-plugin:2.4:jar from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-jar-plugin:2.4, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@33909752]
+DEBUG Configuring mojo 'org.apache.maven.plugins:maven-jar-plugin:2.4:jar' with basic configurator -->
+DEBUG   (f) classesDirectory = D:\projects-java\_maven\maven\target\classes
+DEBUG   (f) defaultManifestFile = D:\projects-java\_maven\maven\target\classes\META-INF\MANIFEST.MF
+DEBUG   (f) finalName = jaxb-bean-validation-0.0.1-SNAPSHOT
+DEBUG   (f) forceCreation = false
+DEBUG   (f) outputDirectory = D:\projects-java\_maven\maven\target
+DEBUG   (f) project = MavenProject: ua.in.sz.mvn:jaxb-bean-validation:0.0.1-SNAPSHOT @ D:\projects-java\_maven\maven\pom.xml
+DEBUG   (f) session = org.apache.maven.execution.MavenSession@5e2f3be5
+DEBUG   (f) skipIfEmpty = false
+DEBUG   (f) useDefaultManifestFile = false
+DEBUG -- end configuration --
+DEBUG isUp2date: true
+DEBUG Archive D:\projects-java\_maven\maven\target\jaxb-bean-validation-0.0.1-SNAPSHOT.jar is uptodate.
+INFO
+INFO --- maven-deploy-plugin:2.7:deploy (default-deploy) @ jaxb-bean-validation ---
+DEBUG Using mirror maven-default-http-blocker (http://0.0.0.0/) for apache.snapshots (http://people.apache.org/maven-snapshot-repository).
+DEBUG Dependency collection stats {ConflictMarker.analyzeTime=40200, ConflictMarker.markTime=29100, ConflictMarker.nodeCount=32, ConflictIdSorter.graphTime=19600, ConflictIdSorter.topsortTime=13100, ConflictIdSorter.conflictIdCount=14, ConflictIdSorter.conflictIdCycleCou
+nt=0, ConflictResolver.totalTime=200400, ConflictResolver.conflictItemCount=32, DefaultDependencyCollector.collectTime=4765600, DefaultDependencyCollector.transformTime=314200}
+DEBUG org.apache.maven.plugins:maven-deploy-plugin:jar:2.7
+DEBUG    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+DEBUG    org.apache.maven:maven-project:jar:2.0.6:compile
+DEBUG       org.apache.maven:maven-settings:jar:2.0.6:compile
+DEBUG       org.apache.maven:maven-profile:jar:2.0.6:compile
+DEBUG       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+DEBUG          org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+DEBUG       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+DEBUG       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+DEBUG          junit:junit:jar:3.8.1:compile
+DEBUG          classworlds:classworlds:jar:1.1-alpha-2:compile
+DEBUG    org.apache.maven:maven-model:jar:2.0.6:compile
+DEBUG    org.apache.maven:maven-artifact:jar:2.0.6:compile
+DEBUG    org.codehaus.plexus:plexus-utils:jar:1.5.6:compile
+DEBUG Created new class realm plugin>org.apache.maven.plugins:maven-deploy-plugin:2.7
+DEBUG Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-deploy-plugin:2.7
+DEBUG   Imported:  < maven.api
+DEBUG Populating class realm plugin>org.apache.maven.plugins:maven-deploy-plugin:2.7
+DEBUG   Included: org.apache.maven.plugins:maven-deploy-plugin:jar:2.7
+DEBUG   Included: junit:junit:jar:3.8.1
+DEBUG   Included: org.codehaus.plexus:plexus-utils:jar:1.5.6
+DEBUG Configuring mojo org.apache.maven.plugins:maven-deploy-plugin:2.7:deploy from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-deploy-plugin:2.7, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@33909752]
+DEBUG Configuring mojo 'org.apache.maven.plugins:maven-deploy-plugin:2.7:deploy' with basic configurator -->
+DEBUG   (f) artifact = ua.in.sz.mvn:jaxb-bean-validation:jar:0.0.1-SNAPSHOT
+DEBUG   (f) attachedArtifacts = []
+DEBUG   (s) localRepository =       id: local
+      url: file:///C:/Users/szolotukhin/.m2/repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+   blocked: false
+
+DEBUG   (f) offline = false
+DEBUG   (f) packaging = jar
+DEBUG   (f) pomFile = D:\projects-java\_maven\maven\pom.xml
+DEBUG   (f) project = MavenProject: ua.in.sz.mvn:jaxb-bean-validation:0.0.1-SNAPSHOT @ D:\projects-java\_maven\maven\pom.xml
+DEBUG   (f) retryFailedDeploymentCount = 1
+DEBUG   (f) skip = false
+DEBUG   (f) updateReleaseInfo = false
+DEBUG -- end configuration --
+INFO Deploy file [D:\projects-java\_maven\maven\target\jaxb-bean-validation-0.0.1-SNAPSHOT.jar] artifact [ua.in.sz.mvn:jaxb-bean-validation:jar:0.0.1-SNAPSHOT]
+DEBUG Using transporter WagonTransporter with priority -1.0 for http://192.168.56.2:8082/artifactory/libs-snapshot
+DEBUG Using connector BasicRepositoryConnector with priority 0.0 for http://192.168.56.2:8082/artifactory/libs-snapshot with username=admin, password=***
+Downloading from artifactory-snapshots: http://192.168.56.2:8082/artifactory/libs-snapshot/ua/in/sz/mvn/jaxb-bean-validation/0.0.1-SNAPSHOT/maven-metadata.xml
+Downloaded from artifactory-snapshots: http://192.168.56.2:8082/artifactory/libs-snapshot/ua/in/sz/mvn/jaxb-bean-validation/0.0.1-SNAPSHOT/maven-metadata.xml (782 B at 9.4 kB/s)
+DEBUG Writing tracking file C:\Users\szolotukhin\.m2\repository\ua\in\sz\mvn\jaxb-bean-validation\0.0.1-SNAPSHOT\resolver-status.properties
+Uploading to artifactory-snapshots: http://192.168.56.2:8082/artifactory/libs-snapshot/ua/in/sz/mvn/jaxb-bean-validation/0.0.1-SNAPSHOT/jaxb-bean-validation-0.0.1-20230918.161240-3.jar
+Uploaded to artifactory-snapshots: http://192.168.56.2:8082/artifactory/libs-snapshot/ua/in/sz/mvn/jaxb-bean-validation/0.0.1-SNAPSHOT/jaxb-bean-validation-0.0.1-20230918.161240-3.jar (2.6 kB at 117 kB/s)
+Uploading to artifactory-snapshots: http://192.168.56.2:8082/artifactory/libs-snapshot/ua/in/sz/mvn/jaxb-bean-validation/0.0.1-SNAPSHOT/jaxb-bean-validation-0.0.1-20230918.161240-3.pom
+Uploaded to artifactory-snapshots: http://192.168.56.2:8082/artifactory/libs-snapshot/ua/in/sz/mvn/jaxb-bean-validation/0.0.1-SNAPSHOT/jaxb-bean-validation-0.0.1-20230918.161240-3.pom (1.0 kB at 47 kB/s)
+Downloading from artifactory-snapshots: http://192.168.56.2:8082/artifactory/libs-snapshot/ua/in/sz/mvn/jaxb-bean-validation/maven-metadata.xml
+Downloaded from artifactory-snapshots: http://192.168.56.2:8082/artifactory/libs-snapshot/ua/in/sz/mvn/jaxb-bean-validation/maven-metadata.xml (385 B at 21 kB/s)
+DEBUG Writing tracking file C:\Users\szolotukhin\.m2\repository\ua\in\sz\mvn\jaxb-bean-validation\resolver-status.properties
+Uploading to artifactory-snapshots: http://192.168.56.2:8082/artifactory/libs-snapshot/ua/in/sz/mvn/jaxb-bean-validation/0.0.1-SNAPSHOT/maven-metadata.xml
+Uploaded to artifactory-snapshots: http://192.168.56.2:8082/artifactory/libs-snapshot/ua/in/sz/mvn/jaxb-bean-validation/0.0.1-SNAPSHOT/maven-metadata.xml (782 B at 78 kB/s)
+Uploading to artifactory-snapshots: http://192.168.56.2:8082/artifactory/libs-snapshot/ua/in/sz/mvn/jaxb-bean-validation/maven-metadata.xml
+Uploaded to artifactory-snapshots: http://192.168.56.2:8082/artifactory/libs-snapshot/ua/in/sz/mvn/jaxb-bean-validation/maven-metadata.xml (328 B at 20 kB/s)
+INFO ------------------------------------------------------------------------
+INFO BUILD SUCCESS
+INFO ------------------------------------------------------------------------
+INFO Total time:  0.600 s
+INFO Finished at: 2023-09-18T19:12:40+03:00
+INFO ------------------------------------------------------------------------
+D:\projects-java\_maven\maven>
+
