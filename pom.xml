@@ -6,7 +6,7 @@
 
     <groupId>ua.in.sz.mvn</groupId>
     <artifactId>jaxb-bean-validation</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -14,4 +14,12 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>artifactory-snapshots</id>
+            <url>http://192.168.56.2:8082/artifactory/libs-snapshot</url>
+<!--            <url>http://localhost:8081/nexus/content/repositories/snapshots</url>-->
+        </snapshotRepository>
+    </distributionManagement>
 </project>
