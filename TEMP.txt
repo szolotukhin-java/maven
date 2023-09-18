@@ -47,3 +47,10 @@ org.codehaus.plexus.archiver.AbstractArchiver#checkForced
 
 org.codehaus.plexus.archiver.AbstractArchiver#isUptodate
         getLogger().debug( "isUp2date: true" );
+
+ # ====================================================================================================================
+ "The target deployment path 'artifactory-snapshots/ua/in/sz/mvn/jaxb-bean-validation/0.0.1-SNAPSHOT/jaxb-bean-validation-0.0.1-20230918.164139-1.pom'
+ does not match the POM's expected path prefix     'ua/in/sz/mvn/jaxb-bean-validation/0.0.1-SNAPSHOT'.
+ Please verify your POM content for correctness and make sure the source path is a valid Maven repository root path."
+
+ http://192.168.56.2:8082/artifactory/libs-snapshot-local/artifactory-snapshots/ua/in/sz/mvn/jaxb-bean-validation/0.0.1-SNAPSHOT/jaxb-bean-validation-0.0.1-20230918.164139-1.jar

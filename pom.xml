@@ -6,8 +6,7 @@
 
     <groupId>ua.in.sz.mvn</groupId>
     <artifactId>jaxb-bean-validation</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-<!--    <packaging>jar</packaging>-->
+    <version>0.0.2-SNAPSHOT</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -15,6 +14,32 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jfrog.buildinfo</groupId>
+                <artifactId>artifactory-maven-plugin</artifactId>
+                <version>3.6.1</version>
+                <executions>
+                    <execution>
+                        <id>build-info</id>
+                        <goals>
+                            <goal>publish</goal>
+                        </goals>
+                        <configuration>
+                            <publisher>
+                                <contextUrl>http://192.168.56.2:8082/artifactory/</contextUrl>
+                                <username>admin</username>
+                                <password>Szolotukhin1</password>
+                                <snapshotRepoKey>libs-snapshot</snapshotRepoKey>
+                            </publisher>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
     <distributionManagement>
         <snapshotRepository>
