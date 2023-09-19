@@ -10,11 +10,6 @@ pipeline {
         jdk 'jdk8'
     }
     stages {
-       stage('before') {
-           steps {
-               sh 'sleep 5'
-           }
-       }
        stage('para') {
            parallel {
                stage('Unit Tests') {
