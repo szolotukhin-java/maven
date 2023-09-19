@@ -20,21 +20,21 @@ pipeline {
                stage('Unit Tests') {
                    steps {
                        sh 'echo "Run 1"'
-                       sh 'sleep 10'
+
                        sh 'echo "End 1"'
                    }
                }
                stage('Functional Tests') {
                    steps {
                         sh 'echo "Run 2"'
-                       sh 'sleep 20'
+
                        sh 'echo "End 2"'
                    }
                }
                stage('Integration Tests') {
                    steps {
                         sh 'echo "Run 3"'
-                       sh 'sleep 15'
+
                        sh 'echo "End 3"'
                    }
                }
