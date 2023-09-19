@@ -19,3 +19,7 @@ https://docs.docker.com/engine/reference/commandline/events/
 #### Don’t Let the Maven Deploy Plugin Trip You Up
 
 https://jfrog.com/blog/dont-let-maven-deploy-plugin-trip-you/
+
+#### Parallel Maven Deployment with Jenkins and Artifactory
+
+https://jfrog.com/blog/parallel-maven-deployment-with-jenkins-and-artifactory/
