@@ -17,3 +17,6 @@
 https://docs.docker.com/engine/reference/commandline/events/
 
 #### How to create Jenkins pipeline
+
+#### Maven command line config
+https://blog.jdriven.com/2023/04/mastering-maven-setting-default-maven-options-with-maven-config/
