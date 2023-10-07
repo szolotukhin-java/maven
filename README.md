@@ -20,3 +20,5 @@ https://docs.docker.com/engine/reference/commandline/events/
 
 #### Maven command line config
 https://blog.jdriven.com/2023/04/mastering-maven-setting-default-maven-options-with-maven-config/
+
+https://maven.apache.org/ref/3.1.0/maven-embedder/cli.html
