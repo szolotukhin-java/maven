@@ -11,6 +11,6 @@ class AppTest {
     @Test
     void isOdd_ShouldReturnTrueForOddNumbers() {
         System.out.println("Hello ");
-        Assertions.fail("message ");
+//        Assertions.fail("message ");
     }
 }

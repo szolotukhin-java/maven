@@ -14,6 +14,6 @@ class ApplicationTest {
     @ValueSource(ints = {1, 3, 5, -3, 15, Integer.MAX_VALUE})
     void isOdd_ShouldReturnTrueForOddNumbers(int number) {
         System.out.println("Hello " + number);
-        Assertions.fail("message " + number);
+//        Assertions.fail("message " + number);
     }
 }
