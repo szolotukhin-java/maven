@@ -56,3 +56,6 @@ com.intellij.rt.junit.JUnitStarter
 @C:\Users\szolotukhin\AppData\Local\Temp\idea_junit.tmp
 
 junit-5-parameterized-test
+
+https://dzone.com/articles/integration-tests-with-maven
+
