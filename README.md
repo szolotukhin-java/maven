@@ -59,3 +59,61 @@ junit-5-parameterized-test
 
 https://dzone.com/articles/integration-tests-with-maven
 
+ERROR Command was 
+cmd.exe /X /C "C:\soft\java-20\bin\java 
+-jar C:\Users\szolotukhin\AppData\Local\Temp\surefire12223766112180281575\surefirebooter-20241218204802567_3.jar 
+C:\Users\szolotukhin\AppData\Local\Temp\surefire12223766112180281575 
+2024-12-18T20-48-02_478-jvmRun1 
+surefire-20241218204802567_1tmp 
+surefire_0-20241218204802567_2tmp"
+
+=======================================================================================================================
+Writing properties to 
+{
+classPathUrl.4=C:\Users\szolotukhin\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar, 
+testSuiteDefinitionTestSourceDirectory=D:\projects-java\_maven\maven-single-module-sandbox\src\test\java, 
+classPathUrl.5=C:\Users\szolotukhin\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar, 
+runOrder=filesystem, 
+tc.3=ua.in.sz.swing.ApplicationTest, 
+classPathUrl.6=C:\Users\szolotukhin\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar, 
+tc.4=ua.in.sz.swing.AppTest, 
+classPathUrl.7=C:\Users\szolotukhin\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar, 
+tc.1=ua.in.sz.swing.App02Test, 
+classPathUrl.8=C:\Users\szolotukhin\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar, 
+reportsDirectory=D:\projects-java\_maven\maven-single-module-sandbox\target\surefire-reports, 
+tc.2=ua.in.sz.swing.App03Test, 
+classPathUrl.9=C:\Users\szolotukhin\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar, 
+forkNumber=3, 
+tc.0=ua.in.sz.swing.App01Test, 
+
+surefireClassPathUrl.0=C:\Users\szolotukhin\.m2\repository\org\apache\maven\surefire\surefire-junit-platform\3.5.3-SNAPSHOT\surefire-junit-platform-3.5.3-SNAPSHOT.jar, 
+classPathUrl.0=D:\projects-java\_maven\maven-single-module-sandbox\target\test-classes, 
+mainCliOptions0=LOGGING_LEVEL_ERROR, 
+systemExitTimeout=30, 
+classPathUrl.1=D:\projects-java\_maven\maven-single-module-sandbox\target\classes, 
+failFastCount=0, 
+classPathUrl.2=C:\Users\szolotukhin\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar, 
+requestedTest=, 
+mainCliOptions2=LOGGING_LEVEL_INFO, 
+classPathUrl.3=C:\Users\szolotukhin\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar, 
+mainCliOptions1=LOGGING_LEVEL_WARN, 
+testClassesDirectory=D:\projects-java\_maven\maven-single-module-sandbox\target\test-classes, 
+preferTestsFromInStream=true, 
+useManifestOnlyJar=true, 
+runStatisticsFile=D:\projects-java\_maven\maven-single-module-sandbox\.surefire-7AF5484091329AA55E7970A2DD642B0D3ED1FDF9, 
+providerConfiguration=org.apache.maven.surefire.junitplatform.JUnitPlatformProvider, 
+rerunFailingTestsCount=0, 
+isTrimStackTrace=false, 
+surefireClassPathUrl.5=C:\Users\szolotukhin\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.2\junit-platform-launcher-1.10.2.jar, 
+forkNodeConnectionString=pipe://3, 
+surefireClassPathUrl.3=C:\Users\szolotukhin\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.5.3-SNAPSHOT\surefire-shared-utils-3.5.3-SNAPSHOT.jar, 
+surefireClassPathUrl.4=C:\Users\szolotukhin\.m2\repository\org\apache\maven\surefire\common-java5\3.5.3-SNAPSHOT\common-java5-3.5.3-SNAPSHOT.jar, 
+surefireClassPathUrl.1=C:\Users\szolotukhin\.m2\repository\org\apache\maven\surefire\surefire-api\3.5.3-SNAPSHOT\surefire-api-3.5.3-SNAPSHOT.jar, 
+surefireClassPathUrl.2=C:\Users\szolotukhin\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.5.3-SNAPSHOT\surefire-logger-api-3.5.3-SNAPSHOT.jar, 
+enableAssertions=true, childDelegation=false, 
+pluginPid=98028, 
+useSystemClassLoader=true, 
+shutdown=EXIT
+}
+
+
