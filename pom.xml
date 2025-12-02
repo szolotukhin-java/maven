@@ -94,22 +94,32 @@
 <!--                            <include>**/*04Test.java</include>-->
                         </includes>
 
-                        <!-- JVMs -->
+                        <!-- JVMs - works -->
 <!--                        <forkCount>3</forkCount>-->
 <!--                        <reuseForks>true</reuseForks>-->
 
-                        <!-- Threas -->
-                        <parallel>methods</parallel>
-<!--                        <useUnlimitedThreads>true</useUnlimitedThreads>-->
-                        <parallelOptimized>false</parallelOptimized>
-<!--                        <threadCountSuites>5</threadCountSuites>-->
-                        <threadCountMethods>5</threadCountMethods>
-<!--                        <threadCountClasses>5</threadCountClasses>-->
-                        <threadCount>25</threadCount>
+                        <!-- Threas - works -->
+                        <properties>
+                            <configurationParameters>
+                                junit.jupiter.execution.parallel.enabled = true
+                                junit.jupiter.execution.parallel.mode.default = concurrent
+                                junit.jupiter.execution.parallel.config.strategy = fixed
+                                junit.jupiter.execution.parallel.config.fixed.parallelism = 40
+                            </configurationParameters>
+                        </properties>
 
-                        <systemPropertyVariables>
+                        <!-- Threas - not works -->
+<!--                        <parallel>methods</parallel>-->
+<!--                        <useUnlimitedThreads>false</useUnlimitedThreads>-->
+<!--                        <parallelOptimized>false</parallelOptimized>-->
+<!--                        <threadCountSuites>5</threadCountSuites>-->
+<!--                        <threadCountMethods>5</threadCountMethods>-->
+<!--                        <threadCountClasses>5</threadCountClasses>-->
+<!--                        <threadCount>25</threadCount>-->
+
+       <!--                 <systemPropertyVariables>
                             <my.forkNumber>JVM-NO-${surefire.forkNumber}</my.forkNumber>
-                        </systemPropertyVariables>
+                        </systemPropertyVariables>-->
                     </configuration>
                 </plugin>
                 <plugin>
