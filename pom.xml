@@ -93,8 +93,20 @@
                             <include>**/*Test.java</include>
 <!--                            <include>**/*04Test.java</include>-->
                         </includes>
-                        <forkCount>3</forkCount>
-                        <reuseForks>true</reuseForks>
+
+                        <!-- JVMs -->
+<!--                        <forkCount>3</forkCount>-->
+<!--                        <reuseForks>true</reuseForks>-->
+
+                        <!-- Threas -->
+                        <parallel>methods</parallel>
+<!--                        <useUnlimitedThreads>true</useUnlimitedThreads>-->
+                        <parallelOptimized>false</parallelOptimized>
+<!--                        <threadCountSuites>5</threadCountSuites>-->
+                        <threadCountMethods>5</threadCountMethods>
+<!--                        <threadCountClasses>5</threadCountClasses>-->
+                        <threadCount>25</threadCount>
+
                         <systemPropertyVariables>
                             <my.forkNumber>JVM-NO-${surefire.forkNumber}</my.forkNumber>
                         </systemPropertyVariables>
