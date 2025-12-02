@@ -93,9 +93,6 @@
                             <include>**/*Test.java</include>
 <!--                            <include>**/*04Test.java</include>-->
                         </includes>
-<!--                        <excludes>
-                            <exclude>**/*04Test.java</exclude>
-                        </excludes>-->
                         <forkCount>3</forkCount>
                         <reuseForks>true</reuseForks>
                         <systemPropertyVariables>
