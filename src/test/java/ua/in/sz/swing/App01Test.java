@@ -28,5 +28,6 @@ class App01Test {
     void test_03() {
         TimeUnit.SECONDS.sleep(1L);
         log.info("test 01 03");
+//        log.info("test 01 03", new IllegalStateException());
     }
 }
