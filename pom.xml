@@ -50,6 +50,21 @@
             <artifactId>junit-jupiter</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- if you want to sorce code in IDEA -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.5.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-launcher</artifactId>
+            <version>6.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -94,8 +109,12 @@
 <!--                            <include>**/*04Test.java</include>-->
                         </includes>
 
+                        <!-- You can use 0 value, if you want to debug test / maven from IDEA -->
+                        <!-- default value is 1 -->
+<!--                        <forkCount>0</forkCount>-->
+
                         <!-- JVMs - works -->
-<!--                        <forkCount>3</forkCount>-->
+<!--                        <forkCount>0</forkCount> -->
 <!--                        <reuseForks>true</reuseForks>-->
 
                         <!-- Threas - works -->
@@ -109,13 +128,13 @@
                         </properties>-->
 
                         <!-- Threas - not works -->
-                        <parallel>methods</parallel>
+<!--                        <parallel>methods</parallel>-->
 <!--                        <useUnlimitedThreads>false</useUnlimitedThreads>-->
 <!--                        <parallelOptimized>false</parallelOptimized>-->
 <!--                        <threadCountSuites>5</threadCountSuites>-->
-                        <threadCountMethods>5</threadCountMethods>
+<!--                        <threadCountMethods>5</threadCountMethods>-->
 <!--                        <threadCountClasses>5</threadCountClasses>-->
-                        <threadCount>25</threadCount>
+<!--                        <threadCount>25</threadCount>-->
 
        <!--                 <systemPropertyVariables>
                             <my.forkNumber>JVM-NO-${surefire.forkNumber}</my.forkNumber>
