@@ -12,4 +12,14 @@ class App02Test {
     void test_01() {
         log.info("test 02 01");
     }
+
+    @Test
+    void test_02() {
+        log.info("test 02 02");
+    }
+
+    @Test
+    void test_03() {
+        log.info("test 02 03");
+    }
 }
