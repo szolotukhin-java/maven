@@ -64,11 +64,14 @@
             <version>6.0.0</version>
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -82,10 +85,10 @@
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
-<!--            <plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
-                <version>3.2.5</version>
+                <version>3.5.4</version>
                 <executions>
                     <execution>
                         <goals>
@@ -94,11 +97,30 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>-->
+            </plugin>
         </plugins>
 
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>3.6.1</version>
+                    <executions>
+                        <execution>
+                            <id>add-test-source</id>
+                            <phase>process-resources</phase>
+                            <goals>
+                                <goal>add-test-source</goal>
+                            </goals>
+                            <configuration>
+                                <sources>
+                                    <source>src/it/java</source>
+                                </sources>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
