@@ -85,6 +85,7 @@
 
         <pluginManagement>
             <plugins>
+                <!-- add source src/it/java -->
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>build-helper-maven-plugin</artifactId>
@@ -118,16 +119,12 @@
                         </annotationProcessorPaths>
                     </configuration>
                 </plugin>
+                <!-- Unit tests -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.5.4</version>
                     <configuration>
-                        <includes>
-                            <include>**/*Test.java</include>
-                        </includes>
-
-                        <!-- Threas -->
                         <properties>
                             <configurationParameters>
                                 junit.jupiter.execution.parallel.enabled = true
@@ -137,6 +134,7 @@
                         </properties>
                     </configuration>
                 </plugin>
+                <!-- Intergartion tests -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-failsafe-plugin</artifactId>
